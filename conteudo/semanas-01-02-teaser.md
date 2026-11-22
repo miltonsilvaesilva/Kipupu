@@ -16,7 +16,7 @@ Calendário (3 posts por semana, sábado de manhã é o dia mais forte):
 ---
 
 ## Post 1 · Carrossel · "Sábado de manhã"
-Adaptação do slide 4 da apresentação, já com o design pronto.
+✅ **Design pronto:** `conteudo/design/post-01-sabado/slide-01.png` … `slide-07.png` (1080×1350). A fonte editável é `carrossel.html`.
 
 **Slides (formato 1080×1350, fundo claro, laranja nos problemas):**
 1. **Capa:** Sábado de manhã. Só queria o carro lavado. 🚗
@@ -25,14 +25,15 @@ Adaptação do slide 4 da apresentação, já com o design pronto.
 4. 09:20 · **Negociar.** "Quanto é?" "Depende…"
 5. 10:10 · **Pagar.** Em dinheiro, sem recibo.
 6. 10:30 · **Torcer pelo resultado.** Depende de quem lavou nesse dia.
-7. (fundo ciano) **Duas horas e meia. Todos os sábados.** Vem aí uma forma de popar isso. 👀
+7. (fundo ciano) **Duas horas e meia. Todos os sábados.** Vem aí uma forma de popar isso. 👀 · **Comenta QUERO 👇** e és dos primeiros a saber.
 
 **Legenda (IG):**
 Duas horas e meia para lavar um carro. Quem nunca? 😅
 
 Diz aqui em baixo: qual destes passos te irrita mais? 1, 2, 3, 4 ou 5?
 
-Estamos a preparar uma coisa para devolver o teu sábado. Segue a página para saberes primeiro.
+Estamos a preparar uma coisa para devolver o teu sábado.
+Comenta **QUERO** e és dos primeiros a saber. 👇
 
 #Luanda #Angola #KiPUPU
 
@@ -93,7 +94,7 @@ KiPUPU quer dizer "o que popou". 🙌
 
 Popar tempo. Popar dinheiro. Popar a paciência que fica na fila todos os sábados.
 
-Na próxima semana contamos tudo. Activa as notificações para não perderes.
+Na próxima semana contamos tudo. Comenta **QUERO** e és dos primeiros a saber. 👇
 
 #KiPUPU #Luanda
 

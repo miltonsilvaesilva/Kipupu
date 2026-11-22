@@ -21,7 +21,26 @@ Porquê este: ainda não há produto aberto nem clientes. Seguidores sem lista d
 
 Seguidores e alcance só servem de contexto. Não são o objectivo.
 
-**A decidir já:** onde se inscrevem os fundadores? Proposta: um formulário simples (Google Forms ou página em kipupu.co.ao) ou "Envia FUNDADOR por WhatsApp". Sem isto, a estratégia não tem para onde levar as pessoas.
+**Como se inscrevem: nos comentários.** A pessoa comenta uma palavra-chave e a equipa faz o resto.
+- Fase Teaser: palavra **QUERO**, para quem quer "saber primeiro". Estas pessoas recebem prioridade no convite de fundador.
+- Fase Revelação em diante: palavra **FUNDADOR**.
+- Comentários também aumentam o alcance do post. Bónus.
+
+**Processo da equipa (todos os dias, de manhã e ao fim do dia):**
+1. Responder **em público** a cada comentário com a palavra-chave (ver modelos abaixo). Variar o texto, porque respostas idênticas parecem robô.
+2. Enviar **mensagem privada** (Instagram Direct / Messenger) a pedir nome e bairro, e WhatsApp se a pessoa quiser.
+3. Registar numa folha partilhada: `data · nome · @ · rede (IG/FB) · bairro · WhatsApp (opcional) · palavra · estado (contactado / respondeu / fundador)`.
+4. Na abertura, contactar a lista **por ordem de inscrição**.
+- Contar inscrições na folha, não nos comentários (há pessoas que comentam duas vezes).
+- Proteger os dados: a folha só é acessível à equipa e os contactos só são usados para a KiPUPU.
+
+**Modelos de resposta pública** (rodar entre eles):
+- "Estás na lista! 🙌 Mandámos-te mensagem."
+- "Anotado 💧 Vê as tuas mensagens."
+- "Boa! Vais ser dos primeiros a saber. Já te escrevemos."
+
+**Modelo de mensagem privada:**
+> Olá! Obrigado pelo interesse na KiPUPU 💧 Estamos a preparar o lançamento em Luanda e vais ser dos primeiros a saber. Para te avisarmos, diz-nos o teu nome e o bairro onde costumas andar de carro. Se preferires receber a novidade por WhatsApp, deixa o número (é opcional).
 
 ## 2. Canais
 
@@ -90,7 +109,7 @@ Três coisas que nos distinguem nas redes:
 - Anúncios pagos antes de sabermos que posts orgânicos funcionam. Depois, impulsionar só esses.
 
 ## 7. Em aberto
-- [ ] Onde se inscrevem os fundadores (formulário, site ou WhatsApp)?
+- [x] Inscrição: nos comentários (QUERO / FUNDADOR), e a equipa trata do resto
 - [ ] O que ganha um membro fundador?
 - [ ] Data prevista de lançamento (define o tamanho das fases)
 - [ ] @ do Instagram e do Facebook
