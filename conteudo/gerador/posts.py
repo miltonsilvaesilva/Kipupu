@@ -25,7 +25,7 @@ P["p07-estacoes"] = [dict(t="statement", theme="dark", kicker="Bastidores", titl
 
 P["p08-130horas"] = [dict(t="stat", theme="dark", kicker="Faz as contas", pre="2h30 por sábado × 52 sábados =", big="130 horas", title="por ano a tratar de lavar o carro.", sub="Mais de 5 dias inteiros. O que farias com esse tempo?", foot="Cenário ilustrativo: 2h30 por lavagem, uma vez por semana.")]
 
-P["p10-amanha"] = [dict(t="statement", theme="dark", kicker="Sábado, 12 de Dezembro", title="Amanhã contamos <span>tudo.</span>", sub="Activa as notificações. 🔔", cta="Comenta <b>QUERO</b> 👇", logo=True)]
+P["p10-amanha"] = [dict(t="statement", theme="dark", kicker="Sábado, 5 de Dezembro", title="Amanhã contamos <span>tudo.</span>", sub="Activa as notificações. 🔔", cta="Comenta <b>QUERO</b> 👇", logo=True)]
 
 P["p11-conhece"] = [
  dict(t="statement", theme="dark", kicker="Chegou o dia", title="Conhece a <span>KiPUPU.</span>", sub="A plataforma que lava o teu carro.", swipe=True, logo=True),

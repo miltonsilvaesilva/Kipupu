@@ -22,8 +22,8 @@ Cada pasta tem um post: `data_dia_hora_nº-tema/`, com as imagens `01.png`, `02.
 Em 1 hora fica o mês inteiro agendado.
 
 ## Atenção
-- **Post 4 (sondagem, 03/12):** no próprio dia, publicar o `story-1080x1920.png` de `conteudo/design/post-04-sondagem/` com o autocolante de sondagem (4 opções). Os stories com autocolante não se agendam com sondagem; fazê-lo no telemóvel.
-- **Post 7 (07/12):** se a estação já tiver filmado, trocar a imagem pelo Reel (até 30 s, com legendas).
-- **Post 9 (10/12):** o story `post-06-nome/story-1080x1920.png` pode sair no mesmo dia.
+- **Post 4 (sondagem, 26/11):** no próprio dia, publicar o `story-1080x1920.png` de `conteudo/design/post-04-sondagem/` com o autocolante de sondagem (4 opções). Os stories com autocolante não se agendam com sondagem; fazê-lo no telemóvel.
+- **Post 7 (30/11):** se a estação já tiver filmado, trocar a imagem pelo Reel (até 30 s, com legendas).
+- **Post 9 (03/12):** o story `post-06-nome/story-1080x1920.png` pode sair no mesmo dia.
 - **Natal (25/12):** confirmar que há alguém para responder a comentários, ou mudar o post para dia 24.
 - Antes de cada fase, rever se algo mudou (preço, data de lançamento, número de estações) e ajustar as legendas.
