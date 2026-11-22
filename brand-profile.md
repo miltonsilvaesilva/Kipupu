@@ -1,5 +1,5 @@
 # Perfil de Marca — KiPUPU
-<!-- versão: 0.2 · actualizado: 2026-11-22 · rever: trimestralmente ou ao mudar oferta/fase
+<!-- versão: 0.3 · actualizado: 2026-11-22 · rever: trimestralmente ou ao mudar oferta/fase
      · tipo: plataforma de consumo (B2C por subscrição) + B2B (frotas) + marketplace (estações parceiras)
      · fonte: KiPUPU-Apresentacao.pdf (apresentação do projecto, Luanda, 2026) -->
 
@@ -74,7 +74,8 @@
 ## Canais
 - **Plataformas activas:** **Facebook e Instagram** (fase de lançamento). WhatsApp Business para atendimento. TikTok e LinkedIn ficam para depois.
 - **Quem produz conteúdo:** as **estações parceiras e os condutores** (UGC), com a equipa KiPUPU a coordenar, editar e publicar. Ver regras de consentimento abaixo.
-- **Handles:** [A CONFIRMAR] @ do Facebook e do Instagram (já criados?)
+- **Handles:** Facebook **facebook.com/kipupu.oficial** (Página "KiPUPU", categoria *Lavagem de automóveis*) · Instagram **@kipupu.oficial** (nome de perfil "KiPUPU · Lavagem auto em Luanda"). Antigo @kipupu.ao2026 já não funciona. @kipupu e @kipupu.ao não estavam disponíveis.
+- **Bio actual (FB e IG):** "A plataforma que lava o teu carro 💧 Subscrição mensal · rede de estações certificadas · Luanda / 👇 Comenta QUERO num post para saberes primeiro". A 05/12 trocar QUERO por FUNDADOR.
 - **Site:** kipupu.co.ao (previsto)
 - **Idioma:** Português (Angola).
 
