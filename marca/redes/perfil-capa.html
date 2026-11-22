@@ -1,0 +1,71 @@
+<!doctype html><html lang="pt"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#003A5D;--night:#062B45;--deep:#041F33;--cyan:#28FFF8;--orange:#F26B1D}
+*{margin:0;box-sizing:border-box}body{background:#777;font-family:Inter}
+section{position:relative;overflow:hidden}
+/* PERFIL */
+.pf{width:1080px;height:1080px;display:flex;align-items:center;justify-content:center}
+.pf.a{background:radial-gradient(circle at 50% 42%,#0B4A72 0,#062B45 62%)}
+.pf.b{background:var(--cyan)}
+.pf.c{background:#fff}
+.pf img{width:560px;transform:translateX(-8px)}
+.drops{position:absolute;inset:0}
+/* CAPA FB 1640x624 */
+.cv{width:1640px;height:624px;background:linear-gradient(115deg,#041F33 0%,#062B45 45%,#0A3E62 100%);color:#EAF3F8}
+.road{position:absolute;left:0;bottom:0;width:1640px;height:624px}
+.txt{position:absolute;left:50%;top:110px;transform:translateX(-50%);width:1100px;text-align:center}
+.kick{font:600 22px Inter;letter-spacing:8px;color:var(--cyan);text-transform:uppercase}
+.h{font:700 100px/1 Lexend;white-space:nowrap;margin-top:20px;letter-spacing:-1px}
+.h span{color:var(--cyan)}
+.s{font:500 30px Inter;color:#A9C2D3;margin-top:22px}
+.pill{display:inline-block;margin-top:28px;background:var(--cyan);color:var(--night);font:600 26px Lexend;padding:14px 30px;border-radius:999px}
+/* DESTAQUES */
+.hl{width:1080px;height:1920px;background:radial-gradient(circle at 50% 50%,#0B4A72 0,#062B45 55%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:60px;color:#fff}
+.ring{width:620px;height:620px;border-radius:50%;border:10px solid var(--cyan);display:flex;align-items:center;justify-content:center;background:#062B45}
+.hl p{font:600 64px Lexend}
+</style></head><body>
+
+<section class="pf a" id="perfil-azul"><img src="../logotipos/kipupu-icone-branco-hd.png"></section>
+<section class="pf c" id="perfil-branco"><img src="../logotipos/kipupu-icone-cor-hd.png"></section>
+
+<section class="cv" id="capa-facebook">
+<svg class="road" viewBox="0 0 1640 624">
+ <defs><linearGradient id="rg" x1="0" x2="1"><stop offset="0" stop-color="#0E4C74"/><stop offset="1" stop-color="#0B5B84"/></linearGradient></defs>
+ <path d="M-40 600 C 300 520, 520 610, 820 560 S 1340 470, 1700 520 L1700 700 L-40 700Z" fill="url(#rg)" opacity=".9"/>
+ <path d="M-40 640 C 300 560, 520 650, 820 600 S 1340 510, 1700 560" fill="none" stroke="#28FFF8" stroke-width="5" stroke-dasharray="26 22" opacity=".8" transform="translate(0,-28)"/>
+ <!-- pins ao longo da estrada -->
+ <g fill="none" stroke="#28FFF8" stroke-width="6">
+  <path d="M190 470a34 34 0 0 1 34 34c0 26-34 56-34 56s-34-30-34-56a34 34 0 0 1 34-34z"/><circle cx="190" cy="504" r="11" fill="#28FFF8"/>
+  <path d="M1460 400a34 34 0 0 1 34 34c0 26-34 56-34 56s-34-30-34-56a34 34 0 0 1 34-34z"/><circle cx="1460" cy="434" r="11" fill="#28FFF8"/>
+ </g>
+ <g opacity=".5" fill="none" stroke="#28FFF8" stroke-width="4">
+  <path d="M420 500a22 22 0 0 1 22 22c0 17-22 36-22 36s-22-19-22-36a22 22 0 0 1 22-22z"/>
+ </g>
+ <!-- carro limpo a brilhar -->
+ <g transform="translate(930 478) scale(.9)">
+  <path d="M0 70 q0 -26 26 -30 l40 -6 l34 -40 q10 -10 24 -10 h80 q14 0 24 10 l34 40 q34 4 34 36 v14 h-296z" fill="#EAF3F8"/>
+  <path d="M108 10 h46 v34 h-78z M164 10 h38 q9 0 15 7 l23 27 h-76z" fill="#0A3E62"/>
+  <circle cx="64" cy="86" r="26" fill="#041F33"/><circle cx="64" cy="86" r="10" fill="#8BA9BD"/><circle cx="232" cy="86" r="26" fill="#041F33"/><circle cx="232" cy="86" r="10" fill="#8BA9BD"/>
+  <g stroke="#28FFF8" stroke-width="5" stroke-linecap="round"><path d="M300 -10 l22 -14 M306 14 l26 0 M296 -34 l12 -20"/></g>
+ </g>
+ <!-- gotas -->
+ <g fill="#28FFF8" opacity=".18">
+  <path d="M120 120c18 26 28 40 28 56a28 28 0 0 1-56 0c0-16 10-30 28-56z"/>
+  <path d="M1540 150c14 20 22 31 22 44a22 22 0 0 1-44 0c0-13 8-24 22-44z"/>
+  <path d="M1380 60c10 14 16 22 16 31a16 16 0 0 1-32 0c0-9 6-17 16-31z"/>
+  <path d="M260 40c10 14 16 22 16 31a16 16 0 0 1-32 0c0-9 6-17 16-31z"/>
+ </g>
+</svg>
+<div class="txt">
+ <div class="kick">Brevemente em Luanda</div>
+ <div class="h">Popa o teu <span>sábado.</span></div>
+ <div class="s">A plataforma que lava o teu carro</div>
+</div>
+</section>
+
+<section class="hl" id="destaque-o-que-e"><div class="ring"><img src="../logotipos/kipupu-icone-branco-hd.png" style="width:330px;transform:translateX(-6px)"></div></section>
+<section class="hl" id="destaque-como-funciona"><div class="ring"><svg width="300" height="300" viewBox="0 0 21 21" shape-rendering="crispEdges"><g fill="#28FFF8"><rect x="0" y="0" width="7" height="7"/><rect x="14" y="0" width="7" height="7"/><rect x="0" y="14" width="7" height="7"/></g><g fill="#062B45"><rect x="1" y="1" width="5" height="5"/><rect x="15" y="1" width="5" height="5"/><rect x="1" y="15" width="5" height="5"/></g><g fill="#28FFF8"><rect x="2" y="2" width="3" height="3"/><rect x="16" y="2" width="3" height="3"/><rect x="2" y="16" width="3" height="3"/><rect x="9" y="1" width="2" height="2"/><rect x="9" y="5" width="3" height="2"/><rect x="8" y="9" width="5" height="2"/><rect x="14" y="9" width="2" height="3"/><rect x="18" y="10" width="2" height="2"/><rect x="9" y="13" width="2" height="4"/><rect x="13" y="14" width="3" height="2"/><rect x="17" y="15" width="3" height="2"/><rect x="12" y="18" width="2" height="2"/><rect x="16" y="18" width="4" height="2"/><rect x="1" y="9" width="3" height="2"/><rect x="5" y="10" width="2" height="2"/></g></svg></div></section>
+<section class="hl" id="destaque-fundadores"><div class="ring"><div style="font:700 230px Lexend;color:#28FFF8;letter-spacing:-8px">100</div></div></section>
+<section class="hl" id="destaque-estacoes"><div class="ring"><svg width="260" height="320" viewBox="0 0 26 32"><path d="M13 1c7 10 12 16 12 21a12 12 0 0 1-24 0C1 17 6 11 13 1z" fill="#28FFF8"/><path d="M7 21a6 6 0 0 0 6 6" stroke="#062B45" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg></div></section>
+</body></html>
