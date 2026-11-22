@@ -82,7 +82,7 @@ Três coisas que nos distinguem nas redes:
 **Cadência realista (fase de preparação):**
 - Feed: **5 publicações por semana** (seg, ter, qui e sex às 19:00 e sáb às 08:00, porque sábado é o "dia de lavar"). Calendário completo em `conteudo/calendario-nov-dez-2026.md`. As horas são uma estimativa inicial: rever ao fim de 2 semanas com as estatísticas do Meta.
 - Stories: **todos os dias** (bastidores rápidos, sondagens "quanto tempo perdeste a lavar o carro?", caixa de perguntas).
-- Facebook: as mesmas 3 publicações, mais 1 partilha por semana em grupos relevantes (sem spam, sempre com valor).
+- Facebook: as mesmas 5 publicações, mais 1 partilha por semana em grupos relevantes (sem spam, sempre com valor).
 - Responder a comentários e mensagens **em menos de 24h**.
 
 **Quem produz:** as estações parceiras e os condutores (UGC).
@@ -95,9 +95,9 @@ Três coisas que nos distinguem nas redes:
 
 | Fase | Quando | Foco nas redes |
 |---|---|---|
-| **A. Teaser** | Semanas 1–2 | Pilar 1 (a dor) + mistério. "Vem aí algo que vai popar o teu sábado." Sem revelar tudo |
-| **B. Revelação** | Semanas 3–4 | O que é a KiPUPU, como funciona, o significado do nome. **Abre a lista de fundadores** |
-| **C. Contagem** | Semanas 5+ até ao lançamento | Bastidores das estações certificadas, perguntas e respostas, "faltam X dias", urgência real (100 lugares) |
+| **A. Teaser** | 22 Nov – 4 Dez | Pilar 1 (a dor) + mistério. "Vem aí algo que vai popar o teu sábado." Sem revelar tudo |
+| **B. Revelação** | 5 – 15 Dez (abre a lista de fundadores a 5 Dez) | O que é a KiPUPU, como funciona, o significado do nome. **Abre a lista de fundadores** |
+| **C. Contagem** | 16 Dez até ao lançamento (lote 16–24 Dez por fazer) | Bastidores das estações certificadas, perguntas e respostas, "faltam X dias", urgência real (100 lugares) |
 | **D. Lançamento** | Dia L | Rever a estratégia: entram testemunhos reais, TikTok em avaliação, CTA passa a "descarrega a app" |
 
 **Medição:** a WoopSocial (ou o Meta Business Suite) agenda e publica. A medição faz-se lendo à mão as estatísticas nativas do Meta e as inscrições no formulário, uma vez por semana. Não há painel automático.
@@ -112,7 +112,8 @@ Três coisas que nos distinguem nas redes:
 ## 7. Em aberto
 - [x] Inscrição: nos comentários (QUERO / FUNDADOR), e a equipa trata do resto
 - [ ] O que ganha um membro fundador?
-- [ ] Data prevista de lançamento (define o tamanho das fases)
+- [x] Início da publicação: 22 Nov 2026 · revelação: 5 Dez 2026
+- [ ] Data prevista de lançamento da app (define a fase C)
 - [ ] @ do Instagram e do Facebook
 - [ ] Quantas estações já estão em certificação e se aceitam aparecer
 - [ ] Quem na equipa aprova e publica, e quanto tempo por semana tem

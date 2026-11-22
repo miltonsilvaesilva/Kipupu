@@ -15,7 +15,7 @@ C = [
  "Lavaste ontem e hoje já parece que não? 🌧️ Na época das chuvas é normal. Desliza para perceber porquê.\n\nGuarda este post e partilha com quem vive a lavar o carro. 📌\n\nComenta QUERO para saberes primeiro o que estamos a preparar. 👇"+H,
  "Carrossel sobre a sujidade do carro na época das chuvas: gotas com terra, lama nas jantes, interior com terra e vidros sujos."),
 ("2026-11-26","19:00","A Teaser","Sábado perdido","Imagem + sondagem nos stories","post-04-sondagem","feed-*.png",
- "Sê sincero. ⏱️ Responde aqui em baixo: A, B, C ou D.\n\nTambém há sondagem nos stories. Na próxima semana partilhamos os resultados."+H,
+ "Sê sincero. ⏱️ Responde aqui em baixo: A, B, C ou D.\n\nTambém há sondagem nos stories. No domingo partilhamos os resultados nos stories. 👀"+H,
  "Pergunta “Quanto tempo perdeste na tua última lavagem?” com quatro opções: menos de 1 hora, entre 1 e 2 horas, mais de 2 horas, já perdi a conta."),
 ("2026-11-27","19:00","A Teaser","Sábado perdido","Imagem","p05-problema","0*.png",
  "Ninguém se importa de ter o carro limpo. O que cansa é tudo o que vem antes: procurar, esperar, negociar…\n\nConcordas? Comenta QUERO e acompanha o que estamos a preparar. 👇"+H,

@@ -1,4 +1,7 @@
 # Semanas 1–2 · Fase A "Teaser"
+
+> ⚠️ **Substituído por `calendario-nov-dez-2026.md`** (datas, legendas finais e post 3 sobre a época das chuvas). Mantém-se aqui só pelos **roteiros dos Reels dos posts 2 e 5**, que continuam válidos para quando houver filmagem.
+
 <!-- Instagram (principal) + Facebook (mesmo conteúdo, texto adaptado). Tratamento: tu.
      Objectivo da fase: criar curiosidade e identificação. Ainda NÃO revelar a app nem o preço. -->
 
