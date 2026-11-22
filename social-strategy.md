@@ -24,12 +24,13 @@ Seguidores e alcance só servem de contexto. Não são o objectivo.
 **Como se inscrevem: nos comentários.** A pessoa comenta uma palavra-chave e a equipa faz o resto.
 - Fase Teaser: palavra **QUERO**, para quem quer "saber primeiro". Estas pessoas recebem prioridade no convite de fundador.
 - Fase Revelação em diante: palavra **FUNDADOR**.
+- Donos de lavagens: palavra **ESTAÇÃO** (registar na mesma folha, com a palavra marcada).
 - Comentários também aumentam o alcance do post. Bónus.
 
 **Processo da equipa (todos os dias, de manhã e ao fim do dia):**
 1. Responder **em público** a cada comentário com a palavra-chave (ver modelos abaixo). Variar o texto, porque respostas idênticas parecem robô.
 2. Enviar **mensagem privada** (Instagram Direct / Messenger) a pedir nome e bairro, e WhatsApp se a pessoa quiser.
-3. Registar numa folha partilhada: `data · nome · @ · rede (IG/FB) · bairro · WhatsApp (opcional) · palavra · estado (contactado / respondeu / fundador)`.
+3. Registar na folha partilhada (modelo em `conteudo/folha-inscritos.csv`): `data · nome · @ · rede (IG/FB) · bairro · WhatsApp (opcional) · palavra · estado (contactado / respondeu / fundador)`.
 4. Na abertura, contactar a lista **por ordem de inscrição**.
 - Contar inscrições na folha, não nos comentários (há pessoas que comentam duas vezes).
 - Proteger os dados: a folha só é acessível à equipa e os contactos só são usados para a KiPUPU.
@@ -79,8 +80,8 @@ Três coisas que nos distinguem nas redes:
 ## 5. Modelo de operação
 
 **Cadência realista (fase de preparação):**
-- Feed: **3 publicações por semana** (ex.: terça, quinta e sábado de manhã, porque sábado é o "dia de lavar").
-- Stories: **4–5 por semana** (bastidores rápidos, sondagens "quanto tempo perdeste a lavar o carro?", caixa de perguntas).
+- Feed: **5 publicações por semana** (seg, ter, qui e sex às 19:00 e sáb às 08:00, porque sábado é o "dia de lavar"). Calendário completo em `conteudo/calendario-dez-2026.md`. As horas são uma estimativa inicial: rever ao fim de 2 semanas com as estatísticas do Meta.
+- Stories: **todos os dias** (bastidores rápidos, sondagens "quanto tempo perdeste a lavar o carro?", caixa de perguntas).
 - Facebook: as mesmas 3 publicações, mais 1 partilha por semana em grupos relevantes (sem spam, sempre com valor).
 - Responder a comentários e mensagens **em menos de 24h**.
 
