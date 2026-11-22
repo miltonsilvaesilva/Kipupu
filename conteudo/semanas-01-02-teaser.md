@@ -69,10 +69,13 @@ Comenta **QUERO** e és dos primeiros a saber. 👇
 ---
 
 ## Post 4 · Post único + sondagem nos stories
+✅ **Design pronto:** `conteudo/design/post-04-sondagem/feed-1080x1350.png` (feed, com as opções A–D) e `story-1080x1920.png` (espaço livre ao centro para o autocolante de sondagem).
 **Imagem:** fundo azul #003A5D, texto grande em branco com o número em ciano:
 **"Quanto tempo perdeste na tua última lavagem?"**
 **Stories (sondagem):** "Menos de 1h" / "1–2h" / "Mais de 2h" / "Já perdi a conta".
-**Legenda:** Sê sincero. ⏱️ Responde nos comentários ou na sondagem dos stories. Na próxima semana partilhamos os resultados.
+**Legenda:** Sê sincero. ⏱️ Responde aqui em baixo: **A, B, C ou D**. Também há sondagem nos stories. Na próxima semana partilhamos os resultados.
+
+**Stories:** usar o autocolante de sondagem com 4 opções, as mesmas da imagem.
 *(Reaproveitar os resultados num post seguinte, porque são dados reais da comunidade.)*
 
 ---
@@ -87,6 +90,7 @@ Comenta **QUERO** e és dos primeiros a saber. 👇
 ---
 
 ## Post 6 · Revelação do nome
+✅ **Design pronto:** `conteudo/design/post-06-nome/feed-1080x1350.png` (com "Comenta QUERO") e `story-1080x1920.png` ("Brevemente em Luanda").
 **Imagem:** ícone KiPUPU grande ao centro, fundo azul.
 **Texto na imagem:** **KiPUPU** · *o que popou*
 **Legenda:**

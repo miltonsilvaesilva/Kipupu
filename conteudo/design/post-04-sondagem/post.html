@@ -1,0 +1,38 @@
+<!doctype html><html lang="pt"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#003A5D;--night:#062B45;--cyan:#28FFF8;--orange:#F26B1D}
+*{margin:0;box-sizing:border-box}body{background:#777;font-family:Inter}
+.s{position:relative;overflow:hidden;background:var(--night);color:#EAF3F8;padding:110px 96px}
+.feed{width:1080px;height:1350px;padding-top:96px}.story{width:1080px;height:1920px;padding:220px 96px}
+.k{font:600 30px Inter;letter-spacing:6px;color:var(--cyan);text-transform:uppercase}
+h1{font:700 86px/1.08 Lexend;margin-top:44px}h1 span{color:var(--cyan)}
+.clock{position:absolute;right:-120px;top:-120px;opacity:.10}
+.opts{margin-top:56px;display:grid;gap:20px}
+.o{display:flex;align-items:center;gap:30px;background:#0B3A5A;border-radius:28px;padding:22px 32px;font:500 42px Lexend}
+.o b{width:78px;height:78px;border-radius:50%;background:var(--cyan);color:var(--night);display:flex;align-items:center;justify-content:center;font:700 40px Lexend;flex:none}
+.o.last b{background:var(--orange);color:#fff}
+.hint{margin-top:40px;font:500 38px Inter;color:#A9C2D3}.hint strong{color:#fff}
+.logo{position:absolute;left:72px;bottom:84px;height:76px}
+.poll{margin-top:110px;height:560px;border:4px dashed rgba(40,255,248,.35);border-radius:40px;display:flex;align-items:center;justify-content:center;color:rgba(169,194,211,.6);font:500 34px Inter;text-align:center}
+</style></head><body>
+<section class="s feed" id="feed">
+<svg class="clock" width="700" height="700" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="#28FFF8" stroke-width="8"/><path d="M50 24V52L66 62" stroke="#28FFF8" stroke-width="8" stroke-linecap="round" fill="none"/></svg>
+<div class="k">Sê sincero ⏱️</div>
+<h1>Quanto <span>tempo</span> perdeste na tua última lavagem?</h1>
+<div class="opts">
+<div class="o"><b>A</b>Menos de 1 hora</div>
+<div class="o"><b>B</b>Entre 1 e 2 horas</div>
+<div class="o"><b>C</b>Mais de 2 horas</div>
+<div class="o last"><b>D</b>Já perdi a conta 😩</div></div>
+<p class="hint">Responde nos comentários: <strong>A, B, C ou D</strong></p>
+<img class="logo" src="kipupu-logo-branco-fundo-escuro.webp">
+</section>
+<section class="s story" id="story">
+<svg class="clock" width="800" height="800" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="#28FFF8" stroke-width="8"/><path d="M50 24V52L66 62" stroke="#28FFF8" stroke-width="8" stroke-linecap="round" fill="none"/></svg>
+<div class="k">Sê sincero ⏱️</div>
+<h1>Quanto <span>tempo</span> perdeste na tua última lavagem?</h1>
+<div class="poll" id="pollzone">colocar aqui o autocolante<br>de sondagem do Instagram</div>
+<p class="hint" style="margin-top:70px">Na próxima semana mostramos os resultados. 👀</p>
+<img class="logo" src="kipupu-logo-branco-fundo-escuro.webp" style="bottom:200px">
+</section></body></html>
