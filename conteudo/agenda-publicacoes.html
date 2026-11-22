@@ -1,0 +1,396 @@
+<title>Agenda KiPUPU</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: lista vertical de posts por ordem de data; cada post = bloco de data à esquerda + imagens e legenda */
+:root{--bg:#F4F7F9;--surface:#FFFFFF;--fg:#0E2233;--muted:#4F6475;--line:#DCE5EC;--navy:#003A5D;--accent:#0A7C86;--cyan:#28FFF8;--done:#E6F7EE;
+--display:"Lexend",system-ui,sans-serif;--text:"Inter",system-ui,sans-serif}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#061C2C;--surface:#0B2A40;--fg:#E7F0F6;--muted:#9FB6C6;--line:#1C4560;--navy:#0F4A72;--accent:#28FFF8;--done:#0F3B2E;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#061C2C;--surface:#0B2A40;--fg:#E7F0F6;--muted:#9FB6C6;--line:#1C4560;--navy:#0F4A72;--accent:#28FFF8;--done:#0F3B2E;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--text);font-size:15px;line-height:1.5;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 64px}
+.wrap{max-width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+header h1{font:700 clamp(26px,4vw,36px)/1.1 var(--display);text-wrap:balance}
+header p{color:var(--muted);margin-top:6px;max-width:68ch}
+.how{background:var(--navy);color:#EAF3F8;border-radius:16px;padding:18px 20px;display:grid;gap:10px}
+.how h2{font:600 17px var(--display);color:var(--cyan)}
+.how ol{padding-left:20px;display:grid;gap:4px}
+.how pre{white-space:pre-wrap;background:rgba(255,255,255,.08);border-radius:10px;padding:12px;font:13px/1.5 var(--text)}
+.how .copy{background:var(--cyan);color:#062B45;border-color:transparent}
+.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;color:var(--muted);font-size:14px}
+.post{background:var(--surface);border:1px solid var(--line);border-radius:16px;display:grid;grid-template-columns:150px minmax(0,1fr);overflow:hidden}
+.post.is-done{background:var(--done)}
+.when{background:var(--navy);color:#fff;padding:16px;display:flex;flex-direction:column;gap:2px;font-variant-numeric:tabular-nums}
+.when .num{font:600 13px var(--text);opacity:.7}.when .day{font:500 14px var(--text)}
+.when .date{font:700 26px/1.1 var(--display)}.when .hour{font:600 20px var(--display);color:var(--cyan)}
+.when .fase{margin-top:auto;font-size:12px;opacity:.75}
+.body{padding:16px;display:grid;gap:12px;min-width:0}
+.meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chip{font:600 12px var(--text);padding:4px 10px;border-radius:999px;background:var(--navy);color:#fff}
+.chip.ghost{background:transparent;color:var(--muted);border:1px solid var(--line)}
+.chip code{font-size:11px}
+.done{margin-left:auto;font-weight:600;display:flex;gap:6px;align-items:center;cursor:pointer}
+.strip{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px}
+figure{flex:none;width:112px;position:relative}figure img{width:112px;height:140px;object-fit:cover;border-radius:8px;border:1px solid var(--line);display:block}
+figcaption{position:absolute;top:4px;left:4px;background:rgba(6,43,69,.85);color:#fff;font:600 11px var(--text);border-radius:6px;padding:1px 6px}
+.lbl{font:600 13px var(--display);color:var(--accent);display:flex;gap:10px;align-items:center;margin-top:4px}
+.caption{white-space:pre-wrap;font:14px/1.5 var(--text);background:var(--bg);border-radius:10px;padding:12px;border:1px solid var(--line)}
+.alt{color:var(--muted);font-size:14px}
+.sched{font-size:14px}
+.copy{font:600 12px var(--text);padding:5px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--fg);cursor:pointer}
+.copy:focus-visible,.done input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.copy.ok{background:var(--accent);color:var(--bg);border-color:transparent}
+@media (max-width:640px){.post{grid-template-columns:1fr}.when{flex-direction:row;flex-wrap:wrap;gap:8px;align-items:baseline}.when .fase{margin-top:0}}
+</style>
+<div class="wrap">
+<header><h1>Agenda KiPUPU · 22 Nov – 26 Dez</h1>
+<p>20 publicações para o Facebook e o Instagram. Cada bloco tem a data e hora, as imagens por ordem, a legenda e o texto alternativo prontos a copiar.</p></header>
+<section class="how"><h2>Como agendar com a extensão Claude no Chrome</h2>
+<ol><li>Descarrega e descomprime o <strong>KiPUPU-agendar-22nov-26dez.zip</strong> no computador. A extensão não consegue escolher ficheiros por ti: quando pedir, carregas tu as imagens da pasta indicada.</li>
+<li>Abre o Meta Business Suite da página KiPUPU num separador e esta página noutro.</li>
+<li>Na extensão Claude, cola a instrução abaixo.</li>
+<li>Marca <strong>Agendado</strong> em cada post concluído. Fica guardado só neste browser.</li></ol>
+<div class="lbl" style="color:var(--cyan)">Instrução para a extensão <button type="button" class="copy" data-t="prompt">Copiar instrução</button></div>
+<pre id="prompt">Abre a página Agenda KiPUPU (este link) e, no Meta Business Suite da página KiPUPU, agenda os posts que ainda não estão agendados. Para cada post: Criar publicação → marcar Facebook e Instagram → eu carrego as imagens da pasta indicada, por ordem → tu colas a legenda exacta → em Definições avançadas colas o texto alternativo → Agendar na data e hora indicadas (hora de Luanda). Não publiques nada de imediato; só agenda. Pára e pergunta-me se algo não corresponder.</pre></section>
+<div class="bar"><span id="count"></span></div>
+
+<article class="post" id="post-1" data-n="1">
+  <div class="when"><span class="num">#1</span><span class="day">Domingo</span><span class="date">22 Nov</span><span class="hour">19:00</span><span class="fase">A Teaser</span></div>
+  <div class="body">
+    <div class="meta"><span class="chip">Carrossel 7</span><span class="chip ghost">7 imagemns · pasta <code>2026-11-22_dom_19h00_01-sabado</code></span>
+      <label class="done"><input type="checkbox" id="done-1"> Agendado</label></div>
+    <div class="strip"><figure><img src="img/01/01.png" alt="Imagem 1 do post 1" loading="lazy"><figcaption>1</figcaption></figure><figure><img src="img/01/02.png" alt="Imagem 2 do post 1" loading="lazy"><figcaption>2</figcaption></figure><figure><img src="img/01/03.png" alt="Imagem 3 do post 1" loading="lazy"><figcaption>3</figcaption></figure><figure><img src="img/01/04.png" alt="Imagem 4 do post 1" loading="lazy"><figcaption>4</figcaption></figure><figure><img src="img/01/05.png" alt="Imagem 5 do post 1" loading="lazy"><figcaption>5</figcaption></figure><figure><img src="img/01/06.png" alt="Imagem 6 do post 1" loading="lazy"><figcaption>6</figcaption></figure><figure><img src="img/01/07.png" alt="Imagem 7 do post 1" loading="lazy"><figcaption>7</figcaption></figure></div>
+    <div class="txt"><div class="lbl">Legenda <button type="button" class="copy" data-t="cap-1">Copiar legenda</button></div>
+      <pre id="cap-1" class="caption">Duas horas e meia para lavar um carro. Quem nunca? 😅
+
+Diz aqui em baixo: qual destes passos te irrita mais? 1, 2, 3, 4 ou 5?
+
+Estamos a preparar uma coisa para devolver o teu sábado. Comenta QUERO e és dos primeiros a saber. 👇 #KiPUPU #Luanda</pre>
+      <div class="lbl">Texto alternativo <button type="button" class="copy" data-t="alt-1">Copiar</button></div>
+      <p id="alt-1" class="alt">Carrossel ilustrado com a manhã de um condutor em Luanda, das 08:00 às 10:30: procurar, esperar, negociar, pagar e torcer pelo resultado.</p>
+      <p class="sched">Agendar para: <strong>22/11/2026 às 19:00</strong> (hora de Luanda) · Facebook + Instagram</p></div>
+  </div>
+</article>
+<article class="post" id="post-2" data-n="2">
+  <div class="when"><span class="num">#2</span><span class="day">Segunda</span><span class="date">23 Nov</span><span class="hour">19:00</span><span class="fase">A Teaser</span></div>
+  <div class="body">
+    <div class="meta"><span class="chip">Imagem</span><span class="chip ghost">1 imagem · pasta <code>2026-11-23_seg_19h00_02-depende</code></span>
+      <label class="done"><input type="checkbox" id="done-2"> Agendado</label></div>
+    <div class="strip"><figure><img src="img/02/01.png" alt="Imagem 1 do post 2" loading="lazy"><figcaption>1</figcaption></figure></div>
+    <div class="txt"><div class="lbl">Legenda <button type="button" class="copy" data-t="cap-2">Copiar legenda</button></div>
+      <pre id="cap-2" class="caption">O “depende” mais famoso de Luanda. 😂
+
+Qual foi a resposta mais criativa que já ouviste quando perguntaste o preço de uma lavagem? Conta aqui.
+
+E se o preço fosse sempre o mesmo? 👀 #KiPUPU #Luanda</pre>
+      <div class="lbl">Texto alternativo <button type="button" class="copy" data-t="alt-2">Copiar</button></div>
+      <p id="alt-2" class="alt">Dois balões de conversa: “Quanto é?” e “Depende…”, com o texto “O depende mais famoso de Luanda”.</p>
+      <p class="sched">Agendar para: <strong>23/11/2026 às 19:00</strong> (hora de Luanda) · Facebook + Instagram</p></div>
+  </div>
+</article>
+<article class="post" id="post-3" data-n="3">
+  <div class="when"><span class="num">#3</span><span class="day">Terça</span><span class="date">24 Nov</span><span class="hour">19:00</span><span class="fase">A Teaser</span></div>
+  <div class="body">
+    <div class="meta"><span class="chip">Carrossel 6</span><span class="chip ghost">6 imagemns · pasta <code>2026-11-24_ter_19h00_03-chuva</code></span>
+      <label class="done"><input type="checkbox" id="done-3"> Agendado</label></div>
+    <div class="strip"><figure><img src="img/03/01.png" alt="Imagem 1 do post 3" loading="lazy"><figcaption>1</figcaption></figure><figure><img src="img/03/02.png" alt="Imagem 2 do post 3" loading="lazy"><figcaption>2</figcaption></figure><figure><img src="img/03/03.png" alt="Imagem 3 do post 3" loading="lazy"><figcaption>3</figcaption></figure><figure><img src="img/03/04.png" alt="Imagem 4 do post 3" loading="lazy"><figcaption>4</figcaption></figure><figure><img src="img/03/05.png" alt="Imagem 5 do post 3" loading="lazy"><figcaption>5</figcaption></figure><figure><img src="img/03/06.png" alt="Imagem 6 do post 3" loading="lazy"><figcaption>6</figcaption></figure></div>
+    <div class="txt"><div class="lbl">Legenda <button type="button" class="copy" data-t="cap-3">Copiar legenda</button></div>
+      <pre id="cap-3" class="caption">Lavaste ontem e hoje já parece que não? 🌧️ Na época das chuvas é normal. Desliza para perceber porquê.
+
+Guarda este post e partilha com quem vive a lavar o carro. 📌
+
+Comenta QUERO para saberes primeiro o que estamos a preparar. 👇 #KiPUPU #Luanda</pre>
+      <div class="lbl">Texto alternativo <button type="button" class="copy" data-t="alt-3">Copiar</button></div>
+      <p id="alt-3" class="alt">Carrossel sobre a sujidade do carro na época das chuvas: gotas com terra, lama nas jantes, interior com terra e vidros sujos.</p>
+      <p class="sched">Agendar para: <strong>24/11/2026 às 19:00</strong> (hora de Luanda) · Facebook + Instagram</p></div>
+  </div>
+</article>
+<article class="post" id="post-4" data-n="4">
+  <div class="when"><span class="num">#4</span><span class="day">Quinta</span><span class="date">26 Nov</span><span class="hour">19:00</span><span class="fase">A Teaser</span></div>
+  <div class="body">
+    <div class="meta"><span class="chip">Imagem + sondagem nos stories</span><span class="chip ghost">1 imagem · pasta <code>2026-11-26_qui_19h00_04-sondagem</code></span>
+      <label class="done"><input type="checkbox" id="done-4"> Agendado</label></div>
+    <div class="strip"><figure><img src="img/04/01.png" alt="Imagem 1 do post 4" loading="lazy"><figcaption>1</figcaption></figure></div>
+    <div class="txt"><div class="lbl">Legenda <button type="button" class="copy" data-t="cap-4">Copiar legenda</button></div>
+      <pre id="cap-4" class="caption">Sê sincero. ⏱️ Responde aqui em baixo: A, B, C ou D.
+
+Também há sondagem nos stories. Na próxima semana partilhamos os resultados. #KiPUPU #Luanda</pre>
+      <div class="lbl">Texto alternativo <button type="button" class="copy" data-t="alt-4">Copiar</button></div>
+      <p id="alt-4" class="alt">Pergunta “Quanto tempo perdeste na tua última lavagem?” com quatro opções: menos de 1 hora, entre 1 e 2 horas, mais de 2 horas, já perdi a conta.</p>
+      <p class="sched">Agendar para: <strong>26/11/2026 às 19:00</strong> (hora de Luanda) · Facebook + Instagram</p></div>
+  </div>
+</article>
+<article class="post" id="post-5" data-n="5">
+  <div class="when"><span class="num">#5</span><span class="day">Sexta</span><span class="date">27 Nov</span><span class="hour">19:00</span><span class="fase">A Teaser</span></div>
+  <div class="body">
+    <div class="meta"><span class="chip">Imagem</span><span class="chip ghost">1 imagem · pasta <code>2026-11-27_sex_19h00_05-problema</code></span>
+      <label class="done"><input type="checkbox" id="done-5"> Agendado</label></div>
+    <div class="strip"><figure><img src="img/05/01.png" alt="Imagem 1 do post 5" loading="lazy"><figcaption>1</figcaption></figure></div>
+    <div class="txt"><div class="lbl">Legenda <button type="button" class="copy" data-t="cap-5">Copiar legenda</button></div>
+      <pre id="cap-5" class="caption">Ninguém se importa de ter o carro limpo. O que cansa é tudo o que vem antes: procurar, esperar, negociar…
+
+Concordas? Comenta QUERO e acompanha o que estamos a preparar. 👇 #KiPUPU #Luanda</pre>
+      <div class="lbl">Texto alternativo <button type="button" class="copy" data-t="alt-5">Copiar</button></div>
+      <p id="alt-5" class="alt">Texto: O verdadeiro problema não é o carro sujo. É todo o trabalho necessário para o manter cuidado.</p>
+      <p class="sched">Agendar para: <strong>27/11/2026 às 19:00</strong> (hora de Luanda) · Facebook + Instagram</p></div>
+  </div>
+</article>
+<article class="post" id="post-6" data-n="6">
+  <div class="when"><span class="num">#6</span><span class="day">Sábado</span><span class="date">28 Nov</span><span class="hour">08:00</span><span class="fase">A Teaser</span></div>
+  <div class="body">
+    <div class="meta"><span class="chip">Imagem</span><span class="chip ghost">1 imagem · pasta <code>2026-11-28_sab_08h00_06-bingo</code></span>
+      <label class="done"><input type="checkbox" id="done-6"> Agendado</label></div>
+    <div class="strip"><figure><img src="img/06/01.png" alt="Imagem 1 do post 6" loading="lazy"><figcaption>1</figcaption></figure></div>
+    <div class="txt"><div class="lbl">Legenda <button type="button" class="copy" data-t="cap-6">Copiar legenda</button></div>
+      <pre id="cap-6" class="caption">Bingo da lavagem de sábado! 🎯
+
+Quantas destas já te aconteceram? Comenta o número (e marca aquele amigo que faz bingo todas as semanas 😂). #KiPUPU #Luanda</pre>
+      <div class="lbl">Texto alternativo <button type="button" class="copy" data-t="alt-6">Copiar</button></div>
+      <p id="alt-6" class="alt">Cartão de bingo com 9 situações comuns numa lavagem: fila de mais de 1 hora, “depende”, não há troco, esqueceram os tapetes, choveu no dia seguinte, sem recibo, marcas no vidro, fechado, preço diferente.</p>
+      <p class="sched">Agendar para: <strong>28/11/2026 às 08:00</strong> (hora de Luanda) · Facebook + Instagram</p></div>
+  </div>
+</article>
+<article class="post" id="post-7" data-n="7">
+  <div class="when"><span class="num">#7</span><span class="day">Segunda</span><span class="date">30 Nov</span><span class="hour">19:00</span><span class="fase">A Teaser</span></div>
+  <div class="body">
+    <div class="meta"><span class="chip">Imagem (trocar por Reel quando houver filmagem)</span><span class="chip ghost">1 imagem · pasta <code>2026-11-30_seg_19h00_07-estacoes</code></span>
+      <label class="done"><input type="checkbox" id="done-7"> Agendado</label></div>
+    <div class="strip"><figure><img src="img/07/01.png" alt="Imagem 1 do post 7" loading="lazy"><figcaption>1</figcaption></figure></div>
+    <div class="txt"><div class="lbl">Legenda <button type="button" class="copy" data-t="cap-7">Copiar legenda</button></div>
+      <pre id="cap-7" class="caption">Nem todas as estações entram na rede KiPUPU. 💧 Estamos a escolher, uma a uma, as que cumprem o nosso padrão de qualidade.
+
+Tens uma lavagem e queres fazer parte? Manda-nos mensagem. #KiPUPU #Luanda</pre>
+      <div class="lbl">Texto alternativo <button type="button" class="copy" data-t="alt-7">Copiar</button></div>
+      <p id="alt-7" class="alt">Texto: Nem todas as estações entram. Estamos a escolher as estações certificadas da rede KiPUPU.</p>
+      <p class="sched">Agendar para: <strong>30/11/2026 às 19:00</strong> (hora de Luanda) · Facebook + Instagram</p></div>
+  </div>
+</article>
+<article class="post" id="post-8" data-n="8">
+  <div class="when"><span class="num">#8</span><span class="day">Terça</span><span class="date">01 Dez</span><span class="hour">19:00</span><span class="fase">A Teaser</span></div>
+  <div class="body">
+    <div class="meta"><span class="chip">Imagem</span><span class="chip ghost">1 imagem · pasta <code>2026-12-01_ter_19h00_08-130horas</code></span>
+      <label class="done"><input type="checkbox" id="done-8"> Agendado</label></div>
+    <div class="strip"><figure><img src="img/08/01.png" alt="Imagem 1 do post 8" loading="lazy"><figcaption>1</figcaption></figure></div>
+    <div class="txt"><div class="lbl">Legenda <button type="button" class="copy" data-t="cap-8">Copiar legenda</button></div>
+      <pre id="cap-8" class="caption">Fizemos as contas. 🧮 Se gastas 2h30 por sábado a tratar de lavar o carro, são 130 horas por ano. Mais de 5 dias inteiros!
+
+O que farias com esse tempo? Conta aqui. 👇 #KiPUPU #Luanda</pre>
+      <div class="lbl">Texto alternativo <button type="button" class="copy" data-t="alt-8">Copiar</button></div>
+      <p id="alt-8" class="alt">2h30 por sábado vezes 52 sábados é igual a 130 horas por ano, mais de 5 dias inteiros. Cenário ilustrativo.</p>
+      <p class="sched">Agendar para: <strong>01/12/2026 às 19:00</strong> (hora de Luanda) · Facebook + Instagram</p></div>
+  </div>
+</article>
+<article class="post" id="post-9" data-n="9">
+  <div class="when"><span class="num">#9</span><span class="day">Quinta</span><span class="date">03 Dez</span><span class="hour">19:00</span><span class="fase">A Teaser</span></div>
+  <div class="body">
+    <div class="meta"><span class="chip">Imagem</span><span class="chip ghost">1 imagem · pasta <code>2026-12-03_qui_19h00_09-nome</code></span>
+      <label class="done"><input type="checkbox" id="done-9"> Agendado</label></div>
+    <div class="strip"><figure><img src="img/09/01.png" alt="Imagem 1 do post 9" loading="lazy"><figcaption>1</figcaption></figure></div>
+    <div class="txt"><div class="lbl">Legenda <button type="button" class="copy" data-t="cap-9">Copiar legenda</button></div>
+      <pre id="cap-9" class="caption">KiPUPU quer dizer “o que popou”. 🙌
+
+Popar tempo. Popar dinheiro. Popar a paciência que fica na fila todos os sábados.
+
+No sábado contamos tudo. Comenta QUERO e és dos primeiros a saber. 👇 #KiPUPU #Luanda</pre>
+      <div class="lbl">Texto alternativo <button type="button" class="copy" data-t="alt-9">Copiar</button></div>
+      <p id="alt-9" class="alt">Ícone KiPUPU com o texto: KiPUPU, o que popou. Popar tempo, popar dinheiro, popar a paciência da fila de sábado.</p>
+      <p class="sched">Agendar para: <strong>03/12/2026 às 19:00</strong> (hora de Luanda) · Facebook + Instagram</p></div>
+  </div>
+</article>
+<article class="post" id="post-10" data-n="10">
+  <div class="when"><span class="num">#10</span><span class="day">Sexta</span><span class="date">04 Dez</span><span class="hour">19:00</span><span class="fase">A Teaser</span></div>
+  <div class="body">
+    <div class="meta"><span class="chip">Imagem</span><span class="chip ghost">1 imagem · pasta <code>2026-12-04_sex_19h00_10-amanha</code></span>
+      <label class="done"><input type="checkbox" id="done-10"> Agendado</label></div>
+    <div class="strip"><figure><img src="img/10/01.png" alt="Imagem 1 do post 10" loading="lazy"><figcaption>1</figcaption></figure></div>
+    <div class="txt"><div class="lbl">Legenda <button type="button" class="copy" data-t="cap-10">Copiar legenda</button></div>
+      <pre id="cap-10" class="caption">Amanhã. 🔔 Activa as notificações da página para não perderes.
+
+Já comentaste QUERO? Ainda vais a tempo. 👇 #KiPUPU #Luanda</pre>
+      <div class="lbl">Texto alternativo <button type="button" class="copy" data-t="alt-10">Copiar</button></div>
+      <p id="alt-10" class="alt">Texto: Amanhã contamos tudo. Activa as notificações.</p>
+      <p class="sched">Agendar para: <strong>04/12/2026 às 19:00</strong> (hora de Luanda) · Facebook + Instagram</p></div>
+  </div>
+</article>
+<article class="post" id="post-11" data-n="11">
+  <div class="when"><span class="num">#11</span><span class="day">Sábado</span><span class="date">05 Dez</span><span class="hour">08:00</span><span class="fase">B Revelação</span></div>
+  <div class="body">
+    <div class="meta"><span class="chip">Carrossel 5</span><span class="chip ghost">5 imagemns · pasta <code>2026-12-05_sab_08h00_11-conhece</code></span>
+      <label class="done"><input type="checkbox" id="done-11"> Agendado</label></div>
+    <div class="strip"><figure><img src="img/11/01.png" alt="Imagem 1 do post 11" loading="lazy"><figcaption>1</figcaption></figure><figure><img src="img/11/02.png" alt="Imagem 2 do post 11" loading="lazy"><figcaption>2</figcaption></figure><figure><img src="img/11/03.png" alt="Imagem 3 do post 11" loading="lazy"><figcaption>3</figcaption></figure><figure><img src="img/11/04.png" alt="Imagem 4 do post 11" loading="lazy"><figcaption>4</figcaption></figure><figure><img src="img/11/05.png" alt="Imagem 5 do post 11" loading="lazy"><figcaption>5</figcaption></figure></div>
+    <div class="txt"><div class="lbl">Legenda <button type="button" class="copy" data-t="cap-11">Copiar legenda</button></div>
+      <pre id="cap-11" class="caption">Chegou o dia: conhece a KiPUPU, a plataforma que lava o teu carro. 💧
+
+Uma app, um valor mensal fixo e uma rede de estações certificadas em Luanda. Sem dinheiro vivo, sem negociar, sem sorte.
+
+Estamos a abrir a lista dos primeiros 100 membros fundadores. Comenta FUNDADOR e a nossa equipa fala contigo. 👇 #KiPUPU #Luanda</pre>
+      <div class="lbl">Texto alternativo <button type="button" class="copy" data-t="alt-11">Copiar</button></div>
+      <p id="alt-11" class="alt">Carrossel de apresentação da KiPUPU: uma app, um valor mensal fixo pago em Kwanza e uma rede de estações certificadas. Convite para membro fundador.</p>
+      <p class="sched">Agendar para: <strong>05/12/2026 às 08:00</strong> (hora de Luanda) · Facebook + Instagram</p></div>
+  </div>
+</article>
+<article class="post" id="post-12" data-n="12">
+  <div class="when"><span class="num">#12</span><span class="day">Segunda</span><span class="date">07 Dez</span><span class="hour">19:00</span><span class="fase">B Revelação</span></div>
+  <div class="body">
+    <div class="meta"><span class="chip">Carrossel 3</span><span class="chip ghost">3 imagemns · pasta <code>2026-12-07_seg_19h00_12-5passos</code></span>
+      <label class="done"><input type="checkbox" id="done-12"> Agendado</label></div>
+    <div class="strip"><figure><img src="img/12/01.png" alt="Imagem 1 do post 12" loading="lazy"><figcaption>1</figcaption></figure><figure><img src="img/12/02.png" alt="Imagem 2 do post 12" loading="lazy"><figcaption>2</figcaption></figure><figure><img src="img/12/03.png" alt="Imagem 3 do post 12" loading="lazy"><figcaption>3</figcaption></figure></div>
+    <div class="txt"><div class="lbl">Legenda <button type="button" class="copy" data-t="cap-12">Copiar legenda</button></div>
+      <pre id="cap-12" class="caption">Do sofá à estação em 5 passos. 📱➡️🚗
+
+1. Subscreve
+2. Regista o carro
+3. Mostra o QR Code
+4. Lava
+5. Avalia
+
+Guarda para mostrares a quem ainda negoceia o preço todos os sábados. 📌 Comenta FUNDADOR para entrares na lista. 👇 #KiPUPU #Luanda</pre>
+      <div class="lbl">Texto alternativo <button type="button" class="copy" data-t="alt-12">Copiar</button></div>
+      <p id="alt-12" class="alt">Os 5 passos da KiPUPU: subscrever, registar o carro, mostrar o QR Code, lavar e avaliar.</p>
+      <p class="sched">Agendar para: <strong>07/12/2026 às 19:00</strong> (hora de Luanda) · Facebook + Instagram</p></div>
+  </div>
+</article>
+<article class="post" id="post-13" data-n="13">
+  <div class="when"><span class="num">#13</span><span class="day">Terça</span><span class="date">08 Dez</span><span class="hour">19:00</span><span class="fase">B Revelação</span></div>
+  <div class="body">
+    <div class="meta"><span class="chip">Imagem</span><span class="chip ghost">1 imagem · pasta <code>2026-12-08_ter_19h00_13-compara</code></span>
+      <label class="done"><input type="checkbox" id="done-13"> Agendado</label></div>
+    <div class="strip"><figure><img src="img/13/01.png" alt="Imagem 1 do post 13" loading="lazy"><figcaption>1</figcaption></figure></div>
+    <div class="txt"><div class="lbl">Legenda <button type="button" class="copy" data-t="cap-13">Copiar legenda</button></div>
+      <pre id="cap-13" class="caption">Não é só o preço. É a experiência. ✅
+
+Qual destas diferenças te faz mais falta? Comenta aqui.
+
+Queres ser membro fundador? Comenta FUNDADOR. 👇 #KiPUPU #Luanda</pre>
+      <div class="lbl">Texto alternativo <button type="button" class="copy" data-t="alt-13">Copiar</button></div>
+      <p id="alt-13" class="alt">Tabela a comparar a lavagem tradicional com a KiPUPU: encontrar, preço, qualidade, confiança e pagamento.</p>
+      <p class="sched">Agendar para: <strong>08/12/2026 às 19:00</strong> (hora de Luanda) · Facebook + Instagram</p></div>
+  </div>
+</article>
+<article class="post" id="post-14" data-n="14">
+  <div class="when"><span class="num">#14</span><span class="day">Quinta</span><span class="date">10 Dez</span><span class="hour">19:00</span><span class="fase">B Revelação</span></div>
+  <div class="body">
+    <div class="meta"><span class="chip">Carrossel 5</span><span class="chip ghost">5 imagemns · pasta <code>2026-12-10_qui_19h00_14-fundadores</code></span>
+      <label class="done"><input type="checkbox" id="done-14"> Agendado</label></div>
+    <div class="strip"><figure><img src="img/14/01.png" alt="Imagem 1 do post 14" loading="lazy"><figcaption>1</figcaption></figure><figure><img src="img/14/02.png" alt="Imagem 2 do post 14" loading="lazy"><figcaption>2</figcaption></figure><figure><img src="img/14/03.png" alt="Imagem 3 do post 14" loading="lazy"><figcaption>3</figcaption></figure><figure><img src="img/14/04.png" alt="Imagem 4 do post 14" loading="lazy"><figcaption>4</figcaption></figure><figure><img src="img/14/05.png" alt="Imagem 5 do post 14" loading="lazy"><figcaption>5</figcaption></figure></div>
+    <div class="txt"><div class="lbl">Legenda <button type="button" class="copy" data-t="cap-14">Copiar legenda</button></div>
+      <pre id="cap-14" class="caption">Os primeiros 100. 🚗 Os membros fundadores vão ser os primeiros a experimentar a KiPUPU em Luanda e a ajudar-nos a torná-la melhor.
+
+Como entrar? Comenta FUNDADOR e a nossa equipa manda-te mensagem com os próximos passos. 👇 #KiPUPU #Luanda</pre>
+      <div class="lbl">Texto alternativo <button type="button" class="copy" data-t="alt-14">Copiar</button></div>
+      <p id="alt-14" class="alt">Carrossel sobre os 100 membros fundadores: primeiro acesso à beta, a tua voz conta, como entrar.</p>
+      <p class="sched">Agendar para: <strong>10/12/2026 às 19:00</strong> (hora de Luanda) · Facebook + Instagram</p></div>
+  </div>
+</article>
+<article class="post" id="post-15" data-n="15">
+  <div class="when"><span class="num">#15</span><span class="day">Sexta</span><span class="date">11 Dez</span><span class="hour">19:00</span><span class="fase">B Revelação</span></div>
+  <div class="body">
+    <div class="meta"><span class="chip">Carrossel 7</span><span class="chip ghost">7 imagemns · pasta <code>2026-12-11_sex_19h00_15-faq</code></span>
+      <label class="done"><input type="checkbox" id="done-15"> Agendado</label></div>
+    <div class="strip"><figure><img src="img/15/01.png" alt="Imagem 1 do post 15" loading="lazy"><figcaption>1</figcaption></figure><figure><img src="img/15/02.png" alt="Imagem 2 do post 15" loading="lazy"><figcaption>2</figcaption></figure><figure><img src="img/15/03.png" alt="Imagem 3 do post 15" loading="lazy"><figcaption>3</figcaption></figure><figure><img src="img/15/04.png" alt="Imagem 4 do post 15" loading="lazy"><figcaption>4</figcaption></figure><figure><img src="img/15/05.png" alt="Imagem 5 do post 15" loading="lazy"><figcaption>5</figcaption></figure><figure><img src="img/15/06.png" alt="Imagem 6 do post 15" loading="lazy"><figcaption>6</figcaption></figure><figure><img src="img/15/07.png" alt="Imagem 7 do post 15" loading="lazy"><figcaption>7</figcaption></figure></div>
+    <div class="txt"><div class="lbl">Legenda <button type="button" class="copy" data-t="cap-15">Copiar legenda</button></div>
+      <pre id="cap-15" class="caption">As perguntas que vais querer fazer, já respondidas. 👇
+
+Ficou alguma de fora? Pergunta aqui nos comentários, respondemos a todas.
+
+Para entrares na lista de fundadores, comenta FUNDADOR. #KiPUPU #Luanda</pre>
+      <div class="lbl">Texto alternativo <button type="button" class="copy" data-t="alt-15">Copiar</button></div>
+      <p id="alt-15" class="alt">Perguntas e respostas: dinheiro vivo, preço fixo, o que fazer se lavarem mal, onde lavar e quando é anunciado o preço.</p>
+      <p class="sched">Agendar para: <strong>11/12/2026 às 19:00</strong> (hora de Luanda) · Facebook + Instagram</p></div>
+  </div>
+</article>
+<article class="post" id="post-16" data-n="16">
+  <div class="when"><span class="num">#16</span><span class="day">Sábado</span><span class="date">12 Dez</span><span class="hour">08:00</span><span class="fase">B Revelação</span></div>
+  <div class="body">
+    <div class="meta"><span class="chip">Imagem</span><span class="chip ghost">1 imagem · pasta <code>2026-12-12_sab_08h00_16-natal</code></span>
+      <label class="done"><input type="checkbox" id="done-16"> Agendado</label></div>
+    <div class="strip"><figure><img src="img/16/01.png" alt="Imagem 1 do post 16" loading="lazy"><figcaption>1</figcaption></figure></div>
+    <div class="txt"><div class="lbl">Legenda <button type="button" class="copy" data-t="cap-16">Copiar legenda</button></div>
+      <pre id="cap-16" class="caption">Dezembro é para a família, não para a fila da lavagem. 🎄
+
+É para isso que estamos a construir a KiPUPU. Comenta FUNDADOR e sê dos primeiros 100. 👇 #KiPUPU #Luanda</pre>
+      <div class="lbl">Texto alternativo <button type="button" class="copy" data-t="alt-16">Copiar</button></div>
+      <p id="alt-16" class="alt">Texto: Carro limpo para as festas. Sábado livre para a família.</p>
+      <p class="sched">Agendar para: <strong>12/12/2026 às 08:00</strong> (hora de Luanda) · Facebook + Instagram</p></div>
+  </div>
+</article>
+<article class="post" id="post-17" data-n="17">
+  <div class="when"><span class="num">#17</span><span class="day">Segunda</span><span class="date">14 Dez</span><span class="hour">19:00</span><span class="fase">B Revelação</span></div>
+  <div class="body">
+    <div class="meta"><span class="chip">Carrossel 6 (estações)</span><span class="chip ghost">6 imagemns · pasta <code>2026-12-14_seg_19h00_17-parceiros</code></span>
+      <label class="done"><input type="checkbox" id="done-17"> Agendado</label></div>
+    <div class="strip"><figure><img src="img/17/01.png" alt="Imagem 1 do post 17" loading="lazy"><figcaption>1</figcaption></figure><figure><img src="img/17/02.png" alt="Imagem 2 do post 17" loading="lazy"><figcaption>2</figcaption></figure><figure><img src="img/17/03.png" alt="Imagem 3 do post 17" loading="lazy"><figcaption>3</figcaption></figure><figure><img src="img/17/04.png" alt="Imagem 4 do post 17" loading="lazy"><figcaption>4</figcaption></figure><figure><img src="img/17/05.png" alt="Imagem 5 do post 17" loading="lazy"><figcaption>5</figcaption></figure><figure><img src="img/17/06.png" alt="Imagem 6 do post 17" loading="lazy"><figcaption>6</figcaption></figure></div>
+    <div class="txt"><div class="lbl">Legenda <button type="button" class="copy" data-t="cap-17">Copiar legenda</button></div>
+      <pre id="cap-17" class="caption">Donos de lavagens: isto é para vocês. 💧
+
+Clientes recorrentes, pagamento garantido por cada serviço válido e menos dinheiro em caixa.
+
+Queres que a tua estação faça parte da rede KiPUPU? Comenta ESTAÇÃO ou manda mensagem com o nome e a localização. 👇 #KiPUPU #Luanda</pre>
+      <div class="lbl">Texto alternativo <button type="button" class="copy" data-t="alt-17">Copiar</button></div>
+      <p id="alt-17" class="alt">Carrossel para estações de lavagem: clientes recorrentes, pagamento garantido, menos dinheiro em caixa, ferramenta simples para ler o QR Code.</p>
+      <p class="sched">Agendar para: <strong>14/12/2026 às 19:00</strong> (hora de Luanda) · Facebook + Instagram</p></div>
+  </div>
+</article>
+<article class="post" id="post-18" data-n="18">
+  <div class="when"><span class="num">#18</span><span class="day">Terça</span><span class="date">15 Dez</span><span class="hour">19:00</span><span class="fase">B Revelação</span></div>
+  <div class="body">
+    <div class="meta"><span class="chip">Imagem</span><span class="chip ghost">1 imagem · pasta <code>2026-12-15_ter_19h00_18-passe</code></span>
+      <label class="done"><input type="checkbox" id="done-18"> Agendado</label></div>
+    <div class="strip"><figure><img src="img/18/01.png" alt="Imagem 1 do post 18" loading="lazy"><figcaption>1</figcaption></figure></div>
+    <div class="txt"><div class="lbl">Legenda <button type="button" class="copy" data-t="cap-18">Copiar legenda</button></div>
+      <pre id="cap-18" class="caption">Mostra o QR. Lava. Avalia. 📲
+
+O teu passe KiPUPU é válido por poucos minutos e é lido na estação. Seguro e sem complicações.
+
+Comenta FUNDADOR para entrares na lista. 👇 #KiPUPU #Luanda</pre>
+      <div class="lbl">Texto alternativo <button type="button" class="copy" data-t="alt-18">Copiar</button></div>
+      <p id="alt-18" class="alt">Ecrã da app KiPUPU com o passe: plano mensal, 3 de 4 lavagens disponíveis e um QR Code. Texto: Mostra o QR. Lava. Avalia.</p>
+      <p class="sched">Agendar para: <strong>15/12/2026 às 19:00</strong> (hora de Luanda) · Facebook + Instagram</p></div>
+  </div>
+</article>
+<article class="post" id="post-19" data-n="19">
+  <div class="when"><span class="num">#19</span><span class="day">Sexta</span><span class="date">25 Dez</span><span class="hour">10:00</span><span class="fase">B Revelação</span></div>
+  <div class="body">
+    <div class="meta"><span class="chip">Imagem</span><span class="chip ghost">1 imagem · pasta <code>2026-12-25_sex_10h00_19-feliz-natal</code></span>
+      <label class="done"><input type="checkbox" id="done-19"> Agendado</label></div>
+    <div class="strip"><figure><img src="img/19/01.png" alt="Imagem 1 do post 19" loading="lazy"><figcaption>1</figcaption></figure></div>
+    <div class="txt"><div class="lbl">Legenda <button type="button" class="copy" data-t="cap-19">Copiar legenda</button></div>
+      <pre id="cap-19" class="caption">Feliz Natal! 🎄 Da equipa KiPUPU para ti e para a tua família.
+
+Que o próximo ano traga mais tempo para o que importa. 💙 #KiPUPU #Luanda</pre>
+      <div class="lbl">Texto alternativo <button type="button" class="copy" data-t="alt-19">Copiar</button></div>
+      <p id="alt-19" class="alt">Mensagem de Feliz Natal da equipa KiPUPU.</p>
+      <p class="sched">Agendar para: <strong>25/12/2026 às 10:00</strong> (hora de Luanda) · Facebook + Instagram</p></div>
+  </div>
+</article>
+<article class="post" id="post-20" data-n="20">
+  <div class="when"><span class="num">#20</span><span class="day">Sábado</span><span class="date">26 Dez</span><span class="hour">08:00</span><span class="fase">B Revelação</span></div>
+  <div class="body">
+    <div class="meta"><span class="chip">Imagem</span><span class="chip ghost">1 imagem · pasta <code>2026-12-26_sab_08h00_20-ultimo-sabado</code></span>
+      <label class="done"><input type="checkbox" id="done-20"> Agendado</label></div>
+    <div class="strip"><figure><img src="img/20/01.png" alt="Imagem 1 do post 20" loading="lazy"><figcaption>1</figcaption></figure></div>
+    <div class="txt"><div class="lbl">Legenda <button type="button" class="copy" data-t="cap-20">Copiar legenda</button></div>
+      <pre id="cap-20" class="caption">Último sábado do ano na fila da lavagem? 😅
+
+Em breve há uma forma melhor. Comenta FUNDADOR para seres dos primeiros. 👇 #KiPUPU #Luanda</pre>
+      <div class="lbl">Texto alternativo <button type="button" class="copy" data-t="alt-20">Copiar</button></div>
+      <p id="alt-20" class="alt">Texto: Último sábado do ano na fila? Em breve há uma forma melhor.</p>
+      <p class="sched">Agendar para: <strong>26/12/2026 às 08:00</strong> (hora de Luanda) · Facebook + Instagram</p></div>
+  </div>
+</article>
+</div>
+<script>
+(function(){
+  function store(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
+  function update(){var n=document.querySelectorAll('.done input:checked').length;document.getElementById('count').textContent=n+' de 20 agendados'}
+  document.querySelectorAll('.done input').forEach(function(cb){
+    var post=cb.closest('.post');cb.checked=store(cb.id)==='1';post.classList.toggle('is-done',cb.checked);
+    cb.addEventListener('change',function(){store(cb.id,cb.checked?'1':'0');post.classList.toggle('is-done',cb.checked);update()});
+  });update();
+  document.querySelectorAll('.copy').forEach(function(b){b.addEventListener('click',function(){
+    var el=document.getElementById(b.dataset.t),t=el.innerText,label=b.textContent;
+    function ok(){b.textContent='Copiado';b.classList.add('ok');setTimeout(function(){b.textContent=label;b.classList.remove('ok')},1500)}
+    function sel(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Seleccionado: Ctrl+C'}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok,sel)}else sel();
+  })});
+})();
+</script>
